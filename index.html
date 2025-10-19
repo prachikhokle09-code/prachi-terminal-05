@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi — Soft Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro">
+    <h1 id="intro-title">If you’re curious, press [Enter] to explore the unknown...</h1>
+  </div>
+
+  <div id="terminal" class="hidden">
+    <div id="output"></div>
+    <div id="input-line">
+      <span class="prompt">> </span>
+      <input id="input" type="text" autofocus autocomplete="off" />
+    </div>
+  </div>
+
+  <canvas id="butterfly-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

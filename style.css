@@ -1,0 +1,114 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #2b0040, #0d001a);
+  color: #ffccff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* === INTRO === */
+#intro {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+#intro-title {
+  color: #ffb3ff;
+  font-size: 1.4rem;
+  max-width: 90%;
+  line-height: 1.5;
+  text-shadow: 0 0 10px #ff80ff, 0 0 25px #b366ff;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* === TERMINAL === */
+#terminal {
+  background: rgba(20, 0, 40, 0.8);
+  border-radius: 15px;
+  border: 1px solid #cc66ff;
+  box-shadow: 0 0 25px #b366ff;
+  padding: 25px;
+  width: 80%;
+  max-width: 600px;
+  height: 60vh;
+  overflow-y: auto;
+  color: #f5d0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.prompt {
+  color: #ff80ff;
+}
+
+#input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffe6ff;
+  font-size: 1rem;
+  flex: 1;
+  caret-color: #ff99ff;
+}
+
+/* === CANVAS === */
+#butterfly-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* === BUTTON (Mobile Explore) === */
+.explore-btn {
+  margin-top: 20px;
+  background: rgba(255, 179, 255, 0.2);
+  border: 1px solid #ff99ff;
+  color: #ffb3ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-shadow: 0 0 6px #ff99ff;
+  box-shadow: 0 0 20px #b366ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
+  position: relative;
+}
+
+.explore-btn:hover {
+  background: rgba(255, 179, 255, 0.4);
+  transform: scale(1.08);
+}
